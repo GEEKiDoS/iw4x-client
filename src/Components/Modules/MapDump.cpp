@@ -241,7 +241,7 @@ namespace Components
 				this->getFaceList(model->model->materialHandles[i]);
 			}
 
-			const auto* lod = &model->model->lodInfo[model->model->numLods - 1];
+			const auto* lod = &model->model->lodInfo[0];
 
 			const auto baseIndex = this->vertices_.size() + 1;
 			const auto surfIndex = lod->surfIndex;
